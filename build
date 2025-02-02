@@ -1,0 +1,1 @@
+../third/emsdk/upstream/emscripten/emcc your_code.cpp -o dist/your_module.js -s MODULARIZE=1 -s EXPORT_NAME="createModule" -s WASM=1 -s SINGLE_FILE=1 -s EXPORT_ES6=0
