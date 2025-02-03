@@ -3,6 +3,6 @@
 extern "C" {
   EMSCRIPTEN_KEEPALIVE
   int addTwo() {
-    return 44;
+    return 999;
   }
 }

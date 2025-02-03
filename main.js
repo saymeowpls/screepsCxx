@@ -16,4 +16,4 @@ imports.env = {
 
 const wasmInstance = new WebAssembly.Instance(wasmModule, imports);
 
-console.log(wasmInstance.exports.addTwo(5,8));
+console.log(wasmInstance.exports.addTwo(88,99));
