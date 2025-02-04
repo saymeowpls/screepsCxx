@@ -1,5 +1,5 @@
 // This will return an ArrayBuffer with `addTwo.wasm` binary contents
-const bytecode = require('addTwo');
+const bytecode = require('CalInt');
 
 const wasmModule = new WebAssembly.Module(bytecode);
 

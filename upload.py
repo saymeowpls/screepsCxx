@@ -8,8 +8,8 @@ import humanize
 
 
 branch = 'with_help'
-files = {'main.js', 'CalInt.wasm'}
-with open(".token") as f:
+files = {'../main.js', 'CalInt.wasm'}
+with open("../.token") as f:
     token = f.read()
 
 

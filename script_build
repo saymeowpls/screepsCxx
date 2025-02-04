@@ -1,12 +1,2 @@
-#../../Users/kriso/AppData/Local/Screeps/scripts/screeps.com/third/emsdk/upstream/emscripten/emcc your_code.cpp -o addTwo.wasm -O3 -s WASM=1 -s SIDE_MODULE=1
-
-#cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=<path_to_emsdk>/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake ..
-
-
-
-
-cmake -B/path/to/my/build/folder -S/path/to/my/source/folder
-
-
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../../Users/kriso/AppData/Local/Screeps/scripts/screeps.com/third/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake -B./build -S./
-cmake --build .
+cmake --build ./build/

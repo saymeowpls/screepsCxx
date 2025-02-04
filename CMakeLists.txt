@@ -12,14 +12,14 @@ add_compile_options(${COMPILE_FLAGS})
 add_link_options(${COMPILE_FLAGS} ${LINK_FLAGS})
 set(CMAKE_EXECUTABLE_SUFFIX ".wasm")
 
-# add_subdirectory(screepsxx)
+# add_subdirectory(ApiCxx)
 
 # If you change TARGET_NAME, please, make corresponding changes in main.js.
 set(TARGET_NAME CalInt)
 
 add_executable(${TARGET_NAME} your_code.cpp)
-# target_link_libraries(${TARGET_NAME} screepsxx)
 # target_link_options(${TARGET_NAME} PUBLIC -sMODULARIZE=1 --no-entry --bind)
+# target_link_libraries(${TARGET_NAME} ApiCxx)
 
 # Collect all artifacts in 'dist' directory
 # WASM-module and corresponding JS-module must have different base names in order to use them in Screeps, so we add suffixes.
@@ -34,4 +34,4 @@ add_executable(${TARGET_NAME} your_code.cpp)
 # (https://docs.screeps.com/auth-tokens.html).
 # If you don't want to use this script, please, remove following lines.
 find_package(Python COMPONENTS Interpreter REQUIRED)
-# add_custom_command(TARGET ${TARGET_NAME} POST_BUILD COMMAND ${Python_EXECUTABLE} upload.py)
+add_custom_command(TARGET ${TARGET_NAME} POST_BUILD COMMAND ${Python_EXECUTABLE} ../upload.py)
