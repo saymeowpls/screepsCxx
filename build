@@ -1,1 +1,0 @@
-../../Users/kriso/AppData/Local/Screeps/scripts/screeps.com/third/emsdk/upstream/emscripten/emcc your_code.cpp -o addTwo.wasm -O3 -s WASM=1 -s SIDE_MODULE=1

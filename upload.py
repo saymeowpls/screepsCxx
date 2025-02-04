@@ -8,7 +8,7 @@ import humanize
 
 
 branch = 'with_help'
-files = {'addTwo.wasm', 'main.js'}
+files = {'main.js', 'CalInt.wasm'}
 with open(".token") as f:
     token = f.read()
 
