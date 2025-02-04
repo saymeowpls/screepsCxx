@@ -1,2 +1,6 @@
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../../Users/kriso/AppData/Local/Screeps/scripts/screeps.com/third/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake -B./build -S./
 cmake --build ./build/
+
+
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../../../Users/kriso/AppData/Local/Screeps/scripts/screeps.com/third/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake -B./build -S./
+cmake --build ./build/
